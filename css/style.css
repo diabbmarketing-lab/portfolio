@@ -189,7 +189,7 @@ body {
   font-size: 1.1rem;
   line-height: 1.7;
   color: #ccc;
-  margin-bottom: 3rem;
+  margin-bottom: 10px;
   max-width: 600px;
 }
 
@@ -218,7 +218,7 @@ body {
 
 /* Sections */
 .section {
-  padding-top: 4rem; /* Changed from margin to padding for better spacing */
+  padding-top: 20px; /* Changed from margin to padding for better spacing */
 }
 
 .section-header {
@@ -343,9 +343,6 @@ body {
   font-size: 0.9rem;
   color: #888;
 }
-.project-meta .case-content {
-  
-}
 
 
 .load-more-btn {
@@ -399,20 +396,27 @@ body {
 }
 
 .tool-item {
-  background: #1a1a1a;
-  border: 1px solid #333;
-  border-radius: 12px;
+  /* background: #1a1a1a; */
+  /* border: 1px solid #333; */
+  /* border-radius: 12px; */
   padding: 1.5rem;
   display: flex;
+  flex-direction: column;
   align-items: center;
   gap: 1rem;
   transition: border-color 0.3s ease;
+  justify-content: space-between;
+
 }
 
 .tool-item:hover {
   border-color: #22c55e;
 }
-
+.tool-item .tool-img {
+    width: 140px;
+    height: 140px;
+    border-radius: 3px;
+}
 .tool-icon {
   width: 45px;
   height: 45px;
@@ -425,26 +429,6 @@ body {
   font-size: 1rem;
 }
 
-.tool-figma {
-  background: #f24e1e;
-}
-.tool-framer {
-  background: #0055ff;
-}
-.tool-lemon {
-  background: #ffc233;
-  color: #000;
-}
-.tool-notion {
-  background: #000;
-  border: 1px solid #666;
-}
-.tool-illustrator {
-  background: #ff9a00;
-}
-.tool-icons {
-  background: #6366f1;
-}
 
 .tool-info h4 {
   font-size: 1rem;
