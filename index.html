@@ -8,6 +8,11 @@
     <link rel="stylesheet" href="css/style.css" />
   </head>
   <body>
+    <!-- Overlay -->
+    <div class="overlay" id="overlay">
+      <img id="overlay-img" src="" alt="Preview" />
+    </div>
+
     <div class="container">
       <aside class="profile-card">
         <div class="profile-image">
@@ -15,6 +20,7 @@
             src="images/ed468646-c564-4763-b514-ce129c589e18.jpeg"
             alt=""
             srcset=""
+            class="pic"
           />
         </div>
         <div class="availability">● Available for work</div>
@@ -61,7 +67,7 @@
                   class="fa-solid fa-file fa-1x"
                   style="color: #74c0fc"
                 ></i></span
-              ><span>See CV</span>
+              ><span>CV</span>
             </a>
           </button>
           <button class="contact-btn">
@@ -79,7 +85,7 @@
       </aside>
 
       <main class="page-content">
-        <div class="main-content-intro" >
+        <div class="main-content-intro">
           <h1 class="main-title">
             I'm Daib Mohamed<br />
             <span class="title-highlight">Performance Media Buyer</span>
@@ -185,7 +191,11 @@
                       </ul>
                     </div>
                     <div class="project-image">
-                      <img src="images/case1before.JPG" alt="image" />
+                      <img
+                        src="images/case1before.JPG"
+                        class="pic"
+                        alt="image"
+                      />
                     </div>
                   </div>
                   <div class="case">
@@ -208,7 +218,11 @@
                       </ul>
                     </div>
                     <div class="project-image">
-                      <img src="images/case1after.JPG" alt="image" />
+                      <img
+                        src="images/case1after.JPG"
+                        class="pic"
+                        alt="image"
+                      />
                     </div>
                   </div>
                   <div class="case">
@@ -226,6 +240,7 @@
                     </div>
                   </div>
                 </div>
+                <button class="read-more-btn">Read More</button>
               </div>
             </div>
             <!-- Case 2: Honey Brand (Saudi Arabia) – Multi-Channel  -->
@@ -277,10 +292,18 @@
                       </ul>
                     </div>
                     <div class="project-image">
-                      <img src="images/HonyCase3before.jpg" alt="image" />
+                      <img
+                        src="images/HonyCase3before.jpg"
+                        class="pic"
+                        alt="image"
+                      />
                     </div>
                     <div class="project-image">
-                      <img src="images/HonyCase3before2.jpg" alt="image" />
+                      <img
+                        src="images/HonyCase3before2.jpg"
+                        class="pic"
+                        alt="image"
+                      />
                     </div>
                   </div>
                   <div class="case">
@@ -300,7 +323,11 @@
                       </ul>
                     </div>
                     <div class="project-image">
-                      <img src="images/HonyCase3after.jpg" alt="image" />
+                      <img
+                        src="images/HonyCase3after.jpg"
+                        class="pic"
+                        alt="image"
+                      />
                     </div>
                   </div>
                 </div>
@@ -361,7 +388,11 @@
                       </ul>
                     </div>
                     <div class="project-image">
-                      <img src="images/Arabiaafter.jpg" alt="image" />
+                      <img
+                        src="images/Arabiaafter.jpg"
+                        class="pic"
+                        alt="image"
+                      />
                     </div>
                   </div>
                   <div class="case">
@@ -415,7 +446,11 @@
                         </li>
                       </ul>
                       <div class="project-image">
-                        <img src="images/Hlicopterbefore.jpg" alt="image" />
+                        <img
+                          src="images/Hlicopterbefore.jpg"
+                          class="pic"
+                          alt="image"
+                        />
                       </div>
                     </div>
                   </div>
@@ -442,7 +477,11 @@
                       </ul>
                     </div>
                     <div class="project-image">
-                      <img src="images/Hlicopterafter.jpg" alt="image" />
+                      <img
+                        src="images/Hlicopterafter.jpg"
+                        class="pic"
+                        alt="image"
+                      />
                     </div>
                   </div>
                   <div class="case">
@@ -492,6 +531,7 @@
                         <img
                           src="images/Level Immigrationbefore.jpg"
                           alt="image"
+                          class="pic"
                         />
                       </div>
                     </div>
@@ -521,6 +561,7 @@
                       <img
                         src="images/Level Immigrationafter.jpg"
                         alt="image"
+                        class="pic"
                       />
                     </div>
                   </div>
@@ -549,7 +590,12 @@
           <div class="tools-grid">
             <div class="tool-item">
               <div class="tool-media">
-                <img class="tool-img" src="images/gtm.png" alt="gtm" />
+                <img
+                  class="tool-img"
+                  src="images/gtm.png"
+                  class="pic"
+                  alt="gtm"
+                />
               </div>
               <div class="tool-info">
                 <h4>Google Tag Manager</h4>
@@ -610,30 +656,35 @@
         <section class="contact-section">
           <h2 class="contact-title">Let's Get in Touch!</h2>
 
-          <div class="contact-info">
-            <div class="contact-item">
-              <div class="contact-icon">📞</div>
-              <div class="contact-details">
-                <h4>Contact Me</h4>
-                <p>+20 102 963 4969</p>
-              </div>
-            </div>
-
-            <div class="contact-item">
-              <div class="contact-icon">📧</div>
-              <div class="contact-details">
-                <h4>Email</h4>
-                <p>diabbmarketing@gmail.com</p>
-              </div>
-            </div>
-
-            <div class="contact-item">
-              <div class="contact-icon">📍</div>
-              <div class="contact-details">
-                <h4>Address</h4>
-                <p>Cairo, Egypt</p>
-              </div>
-            </div>
+          <div class="profile-links s-profile-links">
+            <a
+              href="https://wa.link/pfv938"
+              class="social-icon"
+              target="_blank"
+              title="Facebook"
+              ><i class="fa-brands fa-whatsapp fa-1x" style="color: #11a35f"></i
+            ></a>
+            <a
+              href="https://www.linkedin.com/in/diabmohamed/"
+              target="_blank"
+              class="social-icon"
+              title="Linkedin"
+              ><i class="fa-brands fa-linkedin"></i
+            ></a>
+            <a
+              href="mailto:diabbmarketing@gmail.com"
+              target="_blank"
+              class="social-icon"
+              title="diabbmarketing@gmail.com"
+              ><i class="fa-solid fa-envelope" style="color: #74c0fc"></i
+            ></a>
+            <a
+              href="tel:+201029634969"
+              title="+201029634969"
+              target="_blank"
+              class="social-icon"
+              ><i class="fa-solid fa-phone-volume"></i
+            ></a>
           </div>
         </section>
 
