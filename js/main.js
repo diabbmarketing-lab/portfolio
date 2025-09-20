@@ -22,18 +22,24 @@ const toggleBtn = document.getElementById("toggleBtn");
 
 // End OverLay
 // Read More Button 
-const readMoreBtn = document.querySelector(".read-more-btn");
-const projectMeta = document.querySelector(".project-meta");
+const readMoreBtns = document.querySelectorAll(".read-more-btn");
 
-readMoreBtn.addEventListener("click", () => {
-  projectMeta.classList.toggle("expanded");
+readMoreBtns.forEach((btn) => {
+  btn.addEventListener("click", () => {
+    // find the closest project card
+    const card = btn.closest(".project-card");
+    const projectMeta = card.querySelector(".project-meta");
 
-  if (projectMeta.classList.contains("expanded")) {
-    readMoreBtn.textContent = "Read Less";
-  } else {
-    readMoreBtn.textContent = "Read More";
-  }
+    projectMeta.classList.toggle("expanded");
+
+    if (projectMeta.classList.contains("expanded")) {
+      btn.textContent = "Read Less";
+    } else {
+      btn.textContent = "Read More";
+    }
+  });
 });
+
 
 // Read More and Less Button
 toggleBtn.addEventListener("click", () => {
