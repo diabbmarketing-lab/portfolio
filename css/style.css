@@ -16,7 +16,12 @@ body {
     flex-direction: column;
   }
 }
-
+/* class for use  */
+@media (max-width:768px) {
+  .w-385 {
+    width: 385px;
+  }
+}
 /* MODIFIED: Changed container to a flexbox for the new layout */
 .container {
   max-width: 1300px;
@@ -606,8 +611,8 @@ body {
   }
   .profile-card {
     position: static; /* Remove sticky behavior on mobile */
-    width: 100%; /* Make card full-width */
     height: auto; /* Let height be automatic */
+    margin: 0 auto;
   }
   .main-title {
     font-size: 2.5rem;
