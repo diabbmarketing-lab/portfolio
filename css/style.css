@@ -22,6 +22,7 @@ body {
     width: 385px;
   }
 }
+
 /* MODIFIED: Changed container to a flexbox for the new layout */
 .container {
   max-width: 1300px;
@@ -31,7 +32,25 @@ body {
   align-items: flex-start; /* Align items to the top */
   gap: 4rem; /* Creates space between the profile card and main content */
 }
+/* Small */
 
+@media (min-width: 768px){
+    .container {
+        width: 750px;
+    }
+}
+/* Medium */
+@media (min-width: 992px) {
+    .container {
+        width: 970px;
+    }
+}
+/* Large */
+@media (min-width: 1200px){
+    .container {
+        width: 1170px;
+    }
+}
 /* Overlay */
 .overlay {
   display: none;
