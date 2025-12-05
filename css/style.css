@@ -418,8 +418,47 @@ body {
   color: white;
   max-height: 200px; /* initial collapsed height */
   overflow: hidden;
+  overflow-y: hidden;
   transition: max-height 0.5s ease;
 }
+/* ==== Hidden Scrollbar (Chrome, Safari, Edge) ==== */
+/* Default: hide scrollbar */
+.project-meta.expanded::-webkit-scrollbar {
+  width: 0;       /* hidden */
+}
+
+/* On Hover: show it */
+.project-meta.expanded:hover::-webkit-scrollbar {
+  width: 6px;     /* visible width */
+}
+
+/* Scrollbar track */
+.project-meta.expanded:hover::-webkit-scrollbar-track {
+  background: rgba(255, 255, 255, 0.1);
+  border-radius: 10px;
+}
+
+/* Scrollbar thumb */
+.project-meta.expanded:hover::-webkit-scrollbar-thumb {
+  background: rgba(255, 255, 255, 0.4);
+  border-radius: 10px;
+}
+
+/* Hover effect */
+.project-meta.expanded:hover::-webkit-scrollbar-thumb:hover {
+  background: rgba(255, 255, 255, 0.6);
+}
+
+/* ==== Firefox ==== */
+.project-meta.expanded {
+  scrollbar-width: none; /* hidden */
+}
+
+.project-meta.expanded:hover {
+  scrollbar-width: thin;
+  scrollbar-color: rgba(255,255,255,0.4) rgba(255,255,255,0.1);
+}
+
 /* Read MOre and Less Button */
 .project-meta.expanded {
   max-height: 1000px; /* big enough to show all content */

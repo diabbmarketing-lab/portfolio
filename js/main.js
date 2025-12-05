@@ -33,9 +33,12 @@ readMoreBtns.forEach((btn) => {
     projectMeta.classList.toggle("expanded");
 
     if (projectMeta.classList.contains("expanded")) {
+      projectMeta.style.overflow = 'scroll';
+      projectMeta.style.overflowX = 'hidden';
       btn.textContent = "Read Less";
-    } else {
+} else {
       btn.textContent = "Read More";
+      projectMeta.style.overflow = 'hidden';
     }
   });
 });
